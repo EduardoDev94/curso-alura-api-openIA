@@ -69,7 +69,7 @@ def analisador_sentimentos(produto):
 def salva(nome_do_arquivo, texto):
     try:
         # Tentativa de abrir e escrever no arquivo
-        with open(nome_do_arquivo, "w") as arquivo:
+        with open(nome_do_arquivo, "w", encoding="utf-8") as arquivo:
             arquivo.write(texto)
     except IOError as e:
         # Tratamento de erro em caso de falha ao salvar o arquivo
