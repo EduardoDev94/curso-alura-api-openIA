@@ -2,6 +2,7 @@
 from openai import OpenAI
 from dotenv import load_dotenv
 import os
+import openai
 
 # Carregando as variáveis de ambiente do arquivo .env
 load_dotenv()
@@ -55,15 +56,20 @@ def analisador_sentimentos(produto):
         }
     ]
 
-    # Chama a API da OpenAI para análise de sentimentos
-    resposta = cliente.chat.completions.create(
-        messages=lista_mensagens,
-        model=modelo
-    )
-
+    try:
+            # Chama a API da OpenAI para análise de sentimentos
+        resposta = cliente.chat.completions.create(
+            messages=lista_mensagens,
+            model=modelo
+        )
     # Obtém o texto da resposta e o salva em um arquivo
-    texto_resposta = resposta.choices[0].message.content
-    salva(f"./dados/analise-{produto}.txt", texto_resposta)
+        texto_resposta = resposta.choices[0].message.content
+        salva(f"./dados/analise-{produto}.txt", texto_resposta)
+    
+    except openai.APIError as e:
+        print(f"Erro de API: {e}")       
+    except openai.AuthenticationError as e:
+        print(f"Erro de autenticação: {e}") 
 
 # Função para salvar texto em um arquivo
 def salva(nome_do_arquivo, texto):
@@ -77,3 +83,4 @@ def salva(nome_do_arquivo, texto):
 
 # Exemplo de chamada da função analisador_sentimentos
 analisador_sentimentos("talher-de-bambu")
+
