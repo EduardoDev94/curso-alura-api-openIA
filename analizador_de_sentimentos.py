@@ -81,6 +81,8 @@ def salva(nome_do_arquivo, texto):
         # Tratamento de erro em caso de falha ao salvar o arquivo
         print(f"Erro ao salvar o arquivo: {e}")
 
+lista_de_produtos = ["talher-de-bambu","sabao-biodegradavel", "camisas-algodao-organico" ]
 # Exemplo de chamada da função analisador_sentimentos
-analisador_sentimentos("talher-de-bambu")
+for um_produto in lista_de_produtos:
+    analisador_sentimentos(um_produto)
 
