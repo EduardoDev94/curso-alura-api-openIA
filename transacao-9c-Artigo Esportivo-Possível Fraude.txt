@@ -1,0 +1,13 @@
+Recomendação: 
+
+Com base no status e nos detalhes da transação, recomenda-se uma ação imediata. Dada a possível fraude indicada, a ação apropriada seria "Notificar o Cliente", "Acionar o setor Anti-Fraude" e "Realizar Verificação Manual".
+
+Especificamente, a ação de "Notificar o Cliente" envolveria entrar em contato com o cliente para confirmar a autenticidade da transação. Afinal, o valor da transação é elevado e ela foi efetuada em um horário tardio - ambos são indicativos de uma possível atividade fraudulenta. 
+
+Ao mesmo tempo, para uma ação mais robusta, é imperativo "Acionar o setor Anti-Fraude". Eles podem fazer uma análise mais detalhada da transação, além de adotar medidas preventivas para evitar futuras fraudes.
+
+Por último, a "Realização de Verificação Manual" é necessária neste caso para confirmar se realmente se trata de uma atividade fraudulenta. A verificação manual pode oferecer uma perspectiva mais clara do cliente, suas atividades anteriores e o histórico de transações.
+
+Tipo de Fraude: O tipo de fraude aplicável neste caso é o "Fraude de Cartão de Crédito", pois presume-se que o cliente não realizou a transação e que seus detalhes de cartão de crédito foram comprometidos. 
+
+Por favor, tome as medidas necessárias assim que possível para evitar mais danos.
